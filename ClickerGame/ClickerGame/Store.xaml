@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ClickerGame.Store">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Label Text="0 G" x:Name="labelMoney" FontSize="30" Grid.Row="0" Grid.Column="0" />
+
+            <Label Text="0 G" x:Name="curMult" FontSize="20" Grid.Row="0" Grid.Column="1" />
+
+            <Button Text="Buy upgrade"
+        Clicked="OnButtonClickedBuyUp"
+        BackgroundColor="Indigo"
+        TextColor="Snow"
+       CornerRadius="5"
+        WidthRequest="150"
+        HeightRequest="40"  HorizontalOptions="End" Grid.Row="9" Grid.Column="10"/>
+
+        <Label Text="" x:Name="labelMult" HorizontalOptions="End" FontSize="20"  Grid.Row="10" Grid.Column="5"/>
+
+        <Label Text="" x:Name="labelCost" HorizontalOptions="End" FontSize="20" Grid.Row="11" Grid.Column="5"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
